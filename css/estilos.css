@@ -6,3 +6,7 @@ body {
 footer {
     background: rgba(27, 2, 54, 0.2) 
   }
+
+.enlace {
+  text-decoration: none
+}
