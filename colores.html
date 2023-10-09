@@ -41,37 +41,7 @@
                     
                     Aunque los valores de colores en CSS son definidos de manera precisa existe la posibilidad de que parezcan distintos en dispositivos diferentes. La mayoría de ellos no están calibrados y algunos navegadores no soportan los color profile de algunos dispositivos de salidas. En esta situación el color puede variar bastante.
             </p>
-            <p style="background-color: rgb(116, 218, 231);">
-                <strong>Nota:</strong> La recomendación <ins>WCAG 2.0</ins> de la W3C aconseja a los autores web de manera clara que no usen color como el único medido para especificar una información, acción o resultado concreto. Algunos usuarios tienen problemas para diferenciar colores y existe la posibilidad de que la información transmitida no sea captada. Por supuesto esto no impide que se use el color, sólo su uso como único medio para describir alguna información.
-            </p>
-            <p>
-                Interpolación
-                Los valores del tipo de datos CSS <color> pueden ser interpolados para lograr animaciones o para crear valores <gradient>. En este caso son interpolados en cada uno de sus componentes rojo, verde y azul, conteniendo, cada uno de ellos, un número decimal con coma flotante. Debe tenerse en cuenta que la interpolación del color sucede en el alpha-premultiplied sRGBA color space para evitar que aparezcan grises inesperados. En las animaciones, la velocidad de la interpolación viene determinada por la timing function (en-US) asociada con la animación.
-                
-                Valores
-                Hay varias formas de describir un valor <color>.
-                
-                Palabras clave de colores
-                Las palabras clave de colores son identificadores en los que no hay distinción entre mayúsculas y minúsculas y que sirven para representar un color concreto, por ejemplo red, blue, brown, lightseagreen. El nombre describe el color aunque es mayormente artificial. La lista de valores válidos cambia un montón de una especificación a otra:
-                
-                CSS Nivel 1 sólo acepta 16 colores básicos, los llamados colores VGA ya que son tomados de los colores que son capaces de mostrar las trajetas gráficas VGA.
-                CSS Nivel 2 añadió la palabra clave orange.
-                Desde el principio los navegadores aceptarons otros colores, sobre todo la lista de colores X11 con unas pocas diferencias. ya que, los primeros navegadores, eran en su mayoría aplicaciones X11. SVG 1.0 fué el primer estándar que definió formalmente estas palabras clave. Con frecuencia nos referimos a ello como la lista extendida de colores , los colores X11 o los colores SVG.
-                Hay algunas advertencias a tener en cuenta al usar las palabras clave relativas a colores:
-                
-                A excepción de los 16 colores básicos, que son comunes en HTML, los otros no pueden ser usados en HTML. HTML convertirá estos valores desconocidos usando un algoritmo específico y se obtendrá colores totalmente diferentes. Estas palabras clave deberían sólo usarse en SGV y CSS.
-                Colores desconocidos hacen que la propiedad CSS sea declarada inválida. Las propiedades inválidas son ignoradas y , por tanto, el color no tendrá efecto. Esto es un comportamiento diferente al del HTML
-                Ninguna palabra clave de color tiene transparencia en CSS, son colores planos y sólidos.
-                Algunas referencian el mismo color:
-                darkgray / darkgrey
-                darkslategray / darkslategrey
-                dimgray / dimgrey
-                lightgray / lightgrey
-                lightslategray / lightslategrey
-                gray / grey
-                slategray / slategrey
-                Aunque las palabras clave de colores han sido tomadas de los nombres de colores usuales en X11, el color puede ser ligeramente diferente al color en X11 ya que son adaptados por el fabricante para un hardware específico.
-            </p>
+            
             <p>Tomado de: <a href="https://developer.mozilla.org/es/docs/Web/CSS/color_value">Mozilla</a></p>
         </section>
         </div>
